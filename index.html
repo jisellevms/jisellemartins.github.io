@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jiselle Martins | Engenheira de Software</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2f2f2f;
+      --secondary: #6b7280;
+      --accent: #ec4899;
+      --bg: #f9fafb;
+      --card: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--primary);
+      line-height: 1.6;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(135deg, #fdf2f8, #f9fafb);
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    header h2 {
+      font-size: 1.5rem;
+      color: var(--accent);
+      margin: 0.5rem 0 1.5rem;
+    }
+
+    header p {
+      max-width: 600px;
+      color: var(--secondary);
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    section h3 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+
+    section h3::after {
+      content: "";
+      width: 60px;
+      height: 4px;
+      background: var(--accent);
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      margin-bottom: 2rem;
+    }
+
+    .card h4 {
+      font-size: 1.3rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .card span {
+      font-size: 0.9rem;
+      color: var(--secondary);
+    }
+
+    ul {
+      margin-top: 1rem;
+      padding-left: 1.2rem;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 2rem;
+      color: var(--secondary);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div>
+      <h1>Jiselle Martins</h1>
+      <h2>Engenheira de Software</h2>
+      <p>
+        Profissional com mais de 6 anos de experiência em consultorias e multinacionais,
+        com forte atuação em desenvolvimento mobile e soluções financeiras escaláveis.
+      </p>
+    </div>
+  </header>
+
+  <section>
+    <h3>Experiência Profissional</h3>
+
+    <div class="card">
+      <h4>Cielo — Engenheira de Software</h4>
+      <span>Nov/2023 – Atual</span>
+      <ul>
+        <li>Desenvolvimento e sustentação de apps financeiros</li>
+        <li>Atuação em Pix, Open Finance e conciliação bancária</li>
+        <li>Orquestração de MFEs embutidos no app</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>Meta — Desenvolvedora Pleno</h4>
+      <span>Mar/2021 – Ago/2023</span>
+      <ul>
+        <li>Sustentação e evolução de sistemas Android e Flutter</li>
+        <li>Atuação pontual em aplicações Web</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h4>GFX Consultoria — Desenvolvedora Júnior</h4>
+      <span>Nov/2018 – Mar/2021</span>
+      <ul>
+        <li>Projetos para agro, educação, serviços financeiros e logística</li>
+        <li>Desenvolvimento mobile e web</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h3>Formação</h3>
+    <div class="grid">
+      <div class="card">
+        <h4>Pós-graduação em Arquitetura de Software</h4>
+        <span>Instituto Infnet • 2023–2024</span>
+      </div>
+      <div class="card">
+        <h4>Engenharia de Software</h4>
+        <span>Universidade Cesumar • 2019–2022</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h3>Habilidades</h3>
+    <div class="grid">
+      <div class="card">Android • Kotlin • Java</div>
+      <div class="card">Flutter • React Native</div>
+      <div class="card">Clean Architecture • MVVM</div>
+      <div class="card">CI/CD • Git • Firebase</div>
+      <div class="card">SQL • NoSQL • SQLite</div>
+      <div class="card">Metodologias Ágeis</div>
+    </div>
+  </section>
+
+  <section>
+    <h3>Contato</h3>
+    <div class="card">
+      <p>📧 jisellevms@gmail.com</p>
+      <p>📱 (85) 98637-3679</p>
+      <p>💼 linkedin.com/in/jisellemartins</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 • Jiselle Martins • Engenharia & Mobile 💙</p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('section');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15 });
+
+    sections.forEach(section => observer.observe(section));
+  </script>
+
+</body>
+</html>
