@@ -29,15 +29,32 @@
     }
 
     header {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 2rem;
-      background: linear-gradient(135deg, #fdf2f8, #f9fafb);
-      animation: fadeIn 1.2s ease-in-out;
-    }
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url("board-jm.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+      background-attachment: fixed;
+}
+
+    header div {
+  position: relative;
+  z-index: 1;
+  color: white;
+}
+
 
     header h1 {
       font-size: 3rem;
