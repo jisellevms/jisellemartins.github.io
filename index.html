@@ -123,38 +123,35 @@
          to { opacity: 1; }
          }
          .lang-switch{
-position:absolute;
-top:20px;
-right:20px;
-z-index:10;
-}
-
-.lang-switch button{
-background:rgba(255,255,255,0.2);
-border:none;
-color:white;
-padding:6px 12px;
-margin-left:6px;
-border-radius:8px;
-cursor:pointer;
-font-weight:600;
-backdrop-filter: blur(6px);
-transition:0.2s;
-}
-
-.lang-switch button:hover{
-background:rgba(255,255,255,0.35);
-}
+         position:absolute;
+         top:20px;
+         right:20px;
+         z-index:10;
+         }
+         .lang-switch button{
+         background:rgba(255,255,255,0.2);
+         border:none;
+         color:white;
+         padding:6px 12px;
+         margin-left:6px;
+         border-radius:8px;
+         cursor:pointer;
+         font-weight:600;
+         backdrop-filter: blur(6px);
+         transition:0.2s;
+         }
+         .lang-switch button:hover{
+         background:rgba(255,255,255,0.35);
+         }
          .skill-progress{
-height:8px;
-width:0;
-background:#ec4899;
-transition: width 1.5s ease;
-}
-
-.skill-progress.visible{
-width:60%;
-}
+         height:8px;
+         width:0;
+         background:#ec4899;
+         transition: width 1.5s ease;
+         }
+         .skill-progress.visible{
+         width:60%;
+         }
       </style>
    </head>
    <body>
@@ -162,395 +159,315 @@ width:60%;
          <div>
             <h1>Jiselle Martins</h1>
             <h2 
-data-pt="Engenheira de Software"
-data-en="Software Engineer">
-Engenheira de Software
-</h2>
-<p
-data-pt="Profissional com mais de 6 anos de experiência em consultorias e multinacionais, com forte atuação em desenvolvimento mobile e soluções financeiras escaláveis."
-data-en="Software engineer with more than 6 years of experience in consulting firms and multinational companies, specializing in mobile development and scalable financial solutions.">
-Profissional com mais de 6 anos de experiência em consultorias e multinacionais,
-com forte atuação em desenvolvimento mobile e soluções financeiras escaláveis.
-</p>
+               data-pt="Engenheira de Software"
+               data-en="Software Engineer">
+               Engenheira de Software
+            </h2>
+            <p
+               data-pt="Profissional com mais de 6 anos de experiência em consultorias e multinacionais, com forte atuação em desenvolvimento mobile e soluções financeiras escaláveis."
+               data-en="Software engineer with more than 6 years of experience in consulting firms and multinational companies, specializing in mobile development and scalable financial solutions.">
+               Profissional com mais de 6 anos de experiência em consultorias e multinacionais,
+               com forte atuação em desenvolvimento mobile e soluções financeiras escaláveis.
+            </p>
          </div>
-
          <div class="lang-switch">
-   <button onclick="setLanguage('pt')">PT</button>
-   <button onclick="setLanguage('en')">EN</button>
-</div>
+            <button onclick="setLanguage('pt')">PT</button>
+            <button onclick="setLanguage('en')">EN</button>
+         </div>
       </header>
-<section>
-
-<h3 
-data-pt="Experiência Profissional"
-data-en="Professional Experience">
-Experiência Profissional
-</h3>
-
-<div class="card">
-   <h4 
-   data-pt="Cielo — Engenheira de Software"
-   data-en="Cielo — Software Engineer">
-   Cielo — Engenheira de Software
-   </h4>
-
-   <span 
-   data-pt="Nov/2023 – Atual"
-   data-en="Nov/2023 – Present">
-   Nov/2023 – Atual
-   </span>
-
-   <ul>
-      <li 
-      data-pt="Desenvolvimento e sustentação de apps financeiros"
-      data-en="Development and maintenance of financial mobile applications">
-      Desenvolvimento e sustentação de apps financeiros
-      </li>
-
-      <li 
-      data-pt="Atuação em Pix, Open Finance e conciliação bancária"
-      data-en="Work on Pix, Open Finance and banking reconciliation features">
-      Atuação em Pix, Open Finance e conciliação bancária
-      </li>
-
-      <li 
-      data-pt="Orquestração de MFEs embutidos no app"
-      data-en="Orchestration of embedded micro frontends within the app">
-      Orquestração de MFEs embutidos no app
-      </li>
-   </ul>
-</div>
-
-<div class="card">
-   <h4 
-   data-pt="Meta — Desenvolvedora Pleno"
-   data-en="Meta — Mid-level Software Developer">
-   Meta — Desenvolvedora Pleno
-   </h4>
-
-   <span>Mar/2021 – Aug/2023</span>
-
-   <ul>
-      <li 
-      data-pt="Sustentação e evolução de sistemas Android e Flutter"
-      data-en="Maintenance and evolution of Android and Flutter systems">
-      Sustentação e evolução de sistemas Android e Flutter
-      </li>
-
-      <li 
-      data-pt="Atuação pontual em aplicações Web"
-      data-en="Occasional work on web applications">
-      Atuação pontual em aplicações Web
-      </li>
-   </ul>
-</div>
-
-<div class="card">
-   <h4 
-   data-pt="GFX Consultoria — Desenvolvedora Júnior"
-   data-en="GFX Consulting — Junior Software Developer">
-   GFX Consultoria — Desenvolvedora Júnior
-   </h4>
-
-   <span>Nov/2018 – Mar/2021</span>
-
-   <ul>
-      <li 
-      data-pt="Projetos para agro, educação, serviços financeiros e logística"
-      data-en="Projects for agribusiness, education, financial services and logistics">
-      Projetos para agro, educação, serviços financeiros e logística
-      </li>
-
-      <li 
-      data-pt="Desenvolvimento mobile e web"
-      data-en="Mobile and web development">
-      Desenvolvimento mobile e web
-      </li>
-   </ul>
-</div>
-
-<div class="card">
-   <h4 
-   data-pt="GFX Consultoria — Estagiária de Desenvolvimento"
-   data-en="GFX Consulting — Software Development Intern">
-   GFX Consultoria — Estagiária de Desenvolvimento
-   </h4>
-
-   <span>Aug/2018 – Nov/2018</span>
-
-   <ul>
-      <li 
-      data-pt="Estágio em desenvolvimento de software com foco em Android"
-      data-en="Software development internship focused on Android">
-      Estágio em desenvolvimento de software com foco em Android
-      </li>
-
-      <li 
-      data-pt="Participação em iniciação de projetos e suporte às squads"
-      data-en="Participation in project initialization and support for development squads">
-      Participação em iniciação de projetos e suporte às squads
-      </li>
-   </ul>
-</div>
-
-</section>
       <section>
-
-<h3 
-data-pt="Formação"
-data-en="Education">
-Formação
-</h3>
-
-<div class="grid">
-
-   <div class="card">
-      <h4 
-      data-pt="Pós-graduação em Arquitetura de Software"
-      data-en="Postgraduate Degree in Software Architecture">
-      Pós-graduação em Arquitetura de Software
-      </h4>
-
-      <span 
-      data-pt="Instituto Infnet • 2023–2024"
-      data-en="Infnet Institute • 2023–2024">
-      Instituto Infnet • 2023–2024
-      </span>
-   </div>
-
-   <div class="card">
-      <h4 
-      data-pt="Engenharia de Software"
-      data-en="Software Engineering">
-      Engenharia de Software
-      </h4>
-
-      <span 
-      data-pt="Universidade Cesumar • 2019–2022"
-      data-en="Cesumar University • 2019–2022">
-      Universidade Cesumar • 2019–2022
-      </span>
-   </div>
-
-   <div class="card">
-      <h4 
-      data-pt="Ensino Médio Integrado ao Curso Técnico em Informática"
-      data-en="High School with Technical Degree in Information Technology">
-      Ensino Médio Integrado ao Curso Técnico em Informática
-      </h4>
-
-      <span 
-      data-pt="EEEP Paulo Petrola • 2016–2018"
-      data-en="EEEP Paulo Petrola Technical School • 2016–2018">
-      EEEP Paulo Petrola • 2016–2018
-      </span>
-   </div>
-
-</div>
-
-</section>
+         <h3 
+            data-pt="Experiência Profissional"
+            data-en="Professional Experience">
+            Experiência Profissional
+         </h3>
+         <div class="card">
+            <h4 
+               data-pt="Cielo — Engenheira de Software"
+               data-en="Cielo — Software Engineer">
+               Cielo — Engenheira de Software
+            </h4>
+            <span 
+               data-pt="Nov/2023 – Atual"
+               data-en="Nov/2023 – Present">
+            Nov/2023 – Atual
+            </span>
+            <ul>
+               <li 
+                  data-pt="Desenvolvimento e sustentação de apps financeiros"
+                  data-en="Development and maintenance of financial mobile applications">
+                  Desenvolvimento e sustentação de apps financeiros
+               </li>
+               <li 
+                  data-pt="Atuação em Pix, Open Finance e conciliação bancária"
+                  data-en="Work on Pix, Open Finance and banking reconciliation features">
+                  Atuação em Pix, Open Finance e conciliação bancária
+               </li>
+               <li 
+                  data-pt="Orquestração de MFEs embutidos no app"
+                  data-en="Orchestration of embedded micro frontends within the app">
+                  Orquestração de MFEs embutidos no app
+               </li>
+            </ul>
+         </div>
+         <div class="card">
+            <h4 
+               data-pt="Meta — Desenvolvedora Pleno"
+               data-en="Meta — Mid-level Software Developer">
+               Meta — Desenvolvedora Pleno
+            </h4>
+            <span>Mar/2021 – Aug/2023</span>
+            <ul>
+               <li 
+                  data-pt="Sustentação e evolução de sistemas Android e Flutter"
+                  data-en="Maintenance and evolution of Android and Flutter systems">
+                  Sustentação e evolução de sistemas Android e Flutter
+               </li>
+               <li 
+                  data-pt="Atuação pontual em aplicações Web"
+                  data-en="Occasional work on web applications">
+                  Atuação pontual em aplicações Web
+               </li>
+            </ul>
+         </div>
+         <div class="card">
+            <h4 
+               data-pt="GFX Consultoria — Desenvolvedora Júnior"
+               data-en="GFX Consulting — Junior Software Developer">
+               GFX Consultoria — Desenvolvedora Júnior
+            </h4>
+            <span>Nov/2018 – Mar/2021</span>
+            <ul>
+               <li 
+                  data-pt="Projetos para agro, educação, serviços financeiros e logística"
+                  data-en="Projects for agribusiness, education, financial services and logistics">
+                  Projetos para agro, educação, serviços financeiros e logística
+               </li>
+               <li 
+                  data-pt="Desenvolvimento mobile e web"
+                  data-en="Mobile and web development">
+                  Desenvolvimento mobile e web
+               </li>
+            </ul>
+         </div>
+         <div class="card">
+            <h4 
+               data-pt="GFX Consultoria — Estagiária de Desenvolvimento"
+               data-en="GFX Consulting — Software Development Intern">
+               GFX Consultoria — Estagiária de Desenvolvimento
+            </h4>
+            <span>Aug/2018 – Nov/2018</span>
+            <ul>
+               <li 
+                  data-pt="Estágio em desenvolvimento de software com foco em Android"
+                  data-en="Software development internship focused on Android">
+                  Estágio em desenvolvimento de software com foco em Android
+               </li>
+               <li 
+                  data-pt="Participação em iniciação de projetos e suporte às squads"
+                  data-en="Participation in project initialization and support for development squads">
+                  Participação em iniciação de projetos e suporte às squads
+               </li>
+            </ul>
+         </div>
+      </section>
       <section>
-
-<h3 
-data-pt="Hard Skills"
-data-en="Hard Skills">
-Hard Skills
-</h3>
-
-<div class="grid">
-
-<div class="card">Android</div>
-<div class="card">Java</div>
-<div class="card">React Native</div>
-<div class="card">Flutter</div>
-<div class="card">Git</div>
-<div class="card">Firebase</div>
-<div class="card">Play Console</div>
-
-<div class="card"
-data-pt="Integração (Rest/SOAP/+)"
-data-en="API Integration (REST/SOAP/+)">
-Integração (Rest/SOAP/+)
-</div>
-
-<div class="card"
-data-pt="Testes unitários"
-data-en="Unit Testing">
-Testes unitários
-</div>
-
-<div class="card"
-data-pt="Testes manuais"
-data-en="Manual Testing">
-Testes manuais
-</div>
-
-<div class="card"
-data-pt="Arquitetura Limpa"
-data-en="Clean Architecture">
-Arquitetura Limpa
-</div>
-
-<div class="card">Clean Code</div>
-<div class="card">MVC - MVP - MVVM</div>
-<div class="card">CI/CD</div>
-<div class="card">GitLab / Bitbucket / GitHub</div>
-<div class="card">SQL - NoSQL - SQLite</div>
-
-<div class="card"
-data-pt="Metodologias ágeis"
-data-en="Agile Methodologies">
-Metodologias ágeis
-</div>
-
-<div class="card"
-data-pt="Levantamento de requisitos"
-data-en="Requirements Gathering">
-Levantamento de requisitos
-</div>
-
-<div class="card">Figma</div>
-<div class="card">Copilot 365</div>
-
-</div>
-
-</section>
-
-
-<section>
-
-<h3
-data-pt="Soft Skills"
-data-en="Soft Skills">
-Soft Skills
-</h3>
-
-<div class="grid">
-
-<div class="card"
-data-pt="Boa comunicação"
-data-en="Strong communication">
-Boa comunicação
-</div>
-
-<div class="card"
-data-pt="Adaptação rápida"
-data-en="Fast adaptability">
-Adaptação rápida
-</div>
-
-<div class="card"
-data-pt="Colaborativa"
-data-en="Collaborative mindset">
-Colaborativa
-</div>
-
-<div class="card"
-data-pt="Senso de dono"
-data-en="Ownership mindset">
-Senso de dono
-</div>
-
-<div class="card"
-data-pt="Senso de urgência"
-data-en="Sense of urgency">
-Senso de urgência
-</div>
-
-<div class="card"
-data-pt="Proatividade"
-data-en="Proactivity">
-Proatividade
-</div>
-
-</div>
-
-</section>
-
-
-<section>
-
-<h3
-data-pt="Idiomas"
-data-en="Languages"
-style="margin-top:4rem">
-Idiomas
-</h3>
-
-<div class="grid">
-
-<div class="card">
-
-<strong
-data-pt="Inglês"
-data-en="English">
-Inglês
-</strong>
-
-<br/>
-
-<small
-data-pt="Intermediário (B1)"
-data-en="Intermediate (B1)">
-Intermediário (B1)
-</small>
-
-<div class="skill-bar">
-  <div class="skill-progress"></div>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section>
-
-<h3
-data-pt="Contato"
-data-en="Contact">
-Contato
-</h3>
-
-<div class="card">
-
-<p>
-📧 
-<a href="mailto:jisellevms@gmail.com">
-jisellevms@gmail.com
-</a>
-</p>
-
-<p>
-📱 
-<a href="tel:+5585986373679">
-(85) 98637-3679
-</a>
-</p>
-
-<p>
-💼 
-<a href="https://www.linkedin.com/in/jisellemartins" target="_blank">
-linkedin.com/in/jisellemartins
-</a>
-</p>
-
-</div>
-
-</section>
-
-
-<footer>
-
-<p
-data-pt="© 2026 • Jiselle Martins • Engenharia de Software 💙"
-data-en="© 2026 • Jiselle Martins • Software Engineering 💙">
-© 2026 • Jiselle Martins • Engenharia de Software 💙
-</p>
-
-</footer>
+         <h3 
+            data-pt="Formação"
+            data-en="Education">
+            Formação
+         </h3>
+         <div class="grid">
+            <div class="card">
+               <h4 
+                  data-pt="Pós-graduação em Arquitetura de Software"
+                  data-en="Postgraduate Degree in Software Architecture">
+                  Pós-graduação em Arquitetura de Software
+               </h4>
+               <span 
+                  data-pt="Instituto Infnet • 2023–2024"
+                  data-en="Infnet Institute • 2023–2024">
+               Instituto Infnet • 2023–2024
+               </span>
+            </div>
+            <div class="card">
+               <h4 
+                  data-pt="Engenharia de Software"
+                  data-en="Software Engineering">
+                  Engenharia de Software
+               </h4>
+               <span 
+                  data-pt="Universidade Cesumar • 2019–2022"
+                  data-en="Cesumar University • 2019–2022">
+               Universidade Cesumar • 2019–2022
+               </span>
+            </div>
+            <div class="card">
+               <h4 
+                  data-pt="Ensino Médio Integrado ao Curso Técnico em Informática"
+                  data-en="High School with Technical Degree in Information Technology">
+                  Ensino Médio Integrado ao Curso Técnico em Informática
+               </h4>
+               <span 
+                  data-pt="EEEP Paulo Petrola • 2016–2018"
+                  data-en="EEEP Paulo Petrola Technical School • 2016–2018">
+               EEEP Paulo Petrola • 2016–2018
+               </span>
+            </div>
+         </div>
+      </section>
+      <section>
+         <h3 
+            data-pt="Hard Skills"
+            data-en="Hard Skills">
+            Hard Skills
+         </h3>
+         <div class="grid">
+            <div class="card">Android</div>
+            <div class="card">Java</div>
+            <div class="card">React Native</div>
+            <div class="card">Flutter</div>
+            <div class="card">Git</div>
+            <div class="card">Firebase</div>
+            <div class="card">Play Console</div>
+            <div class="card"
+               data-pt="Integração (Rest/SOAP/+)"
+               data-en="API Integration (REST/SOAP/+)">
+               Integração (Rest/SOAP/+)
+            </div>
+            <div class="card"
+               data-pt="Testes unitários"
+               data-en="Unit Testing">
+               Testes unitários
+            </div>
+            <div class="card"
+               data-pt="Testes manuais"
+               data-en="Manual Testing">
+               Testes manuais
+            </div>
+            <div class="card"
+               data-pt="Arquitetura Limpa"
+               data-en="Clean Architecture">
+               Arquitetura Limpa
+            </div>
+            <div class="card">Clean Code</div>
+            <div class="card">MVC - MVP - MVVM</div>
+            <div class="card">CI/CD</div>
+            <div class="card">GitLab / Bitbucket / GitHub</div>
+            <div class="card">SQL - NoSQL - SQLite</div>
+            <div class="card"
+               data-pt="Metodologias ágeis"
+               data-en="Agile Methodologies">
+               Metodologias ágeis
+            </div>
+            <div class="card"
+               data-pt="Levantamento de requisitos"
+               data-en="Requirements Gathering">
+               Levantamento de requisitos
+            </div>
+            <div class="card">Figma</div>
+            <div class="card">Copilot 365</div>
+         </div>
+      </section>
+      <section>
+         <h3
+            data-pt="Soft Skills"
+            data-en="Soft Skills">
+            Soft Skills
+         </h3>
+         <div class="grid">
+            <div class="card"
+               data-pt="Boa comunicação"
+               data-en="Strong communication">
+               Boa comunicação
+            </div>
+            <div class="card"
+               data-pt="Adaptação rápida"
+               data-en="Fast adaptability">
+               Adaptação rápida
+            </div>
+            <div class="card"
+               data-pt="Colaborativa"
+               data-en="Collaborative mindset">
+               Colaborativa
+            </div>
+            <div class="card"
+               data-pt="Senso de dono"
+               data-en="Ownership mindset">
+               Senso de dono
+            </div>
+            <div class="card"
+               data-pt="Senso de urgência"
+               data-en="Sense of urgency">
+               Senso de urgência
+            </div>
+            <div class="card"
+               data-pt="Proatividade"
+               data-en="Proactivity">
+               Proatividade
+            </div>
+         </div>
+      </section>
+      <section>
+         <h3
+            data-pt="Idiomas"
+            data-en="Languages"
+            style="margin-top:4rem">
+            Idiomas
+         </h3>
+         <div class="grid">
+            <div class="card">
+               <strong
+                  data-pt="Inglês"
+                  data-en="English">
+               Inglês
+               </strong>
+               <br/>
+               <small
+                  data-pt="Intermediário (B1)"
+                  data-en="Intermediate (B1)">
+               Intermediário (B1)
+               </small>
+               <div class="skill-bar">
+                  <div class="skill-progress"></div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section>
+         <h3
+            data-pt="Contato"
+            data-en="Contact">
+            Contato
+         </h3>
+         <div class="card">
+            <p>
+               📧 
+               <a href="mailto:jisellevms@gmail.com">
+               jisellevms@gmail.com
+               </a>
+            </p>
+            <p>
+               📱 
+               <a href="tel:+5585986373679">
+               (85) 98637-3679
+               </a>
+            </p>
+            <p>
+               💼 
+               <a href="https://www.linkedin.com/in/jisellemartins" target="_blank">
+               linkedin.com/in/jisellemartins
+               </a>
+            </p>
+         </div>
+      </section>
+      <footer>
+         <p
+            data-pt="© 2026 • Jiselle Martins • Engenharia de Software 💙"
+            data-en="© 2026 • Jiselle Martins • Software Engineering 💙">
+            © 2026 • Jiselle Martins • Engenharia de Software 💙
+         </p>
+      </footer>
       <script>
          const sections = document.querySelectorAll('section');
          
@@ -564,25 +481,25 @@ data-en="© 2026 • Jiselle Martins • Software Engineering 💙">
          
          sections.forEach(section => observer.observe(section));
          function setLanguage(lang){
-
-document.querySelectorAll("[data-pt]").forEach(el => {
-   el.textContent = el.dataset[lang]
-})
-
-document.documentElement.lang = lang === "pt" ? "pt-BR" : "en"
-
-}
+         
+         document.querySelectorAll("[data-pt]").forEach(el => {
+         el.textContent = el.dataset[lang]
+         })
+         
+         document.documentElement.lang = lang === "pt" ? "pt-BR" : "en"
+         
+         }
          document.querySelectorAll('.skill-progress').forEach(bar => {
-  observer.observe(bar)
-})
-
-observerCallback = entries => {
- entries.forEach(entry => {
-   if(entry.isIntersecting){
-     entry.target.classList.add("visible")
-   }
- })
-}
+         observer.observe(bar)
+         })
+         
+         observerCallback = entries => {
+         entries.forEach(entry => {
+         if(entry.isIntersecting){
+         entry.target.classList.add("visible")
+         }
+         })
+         }
       </script>
    </body>
 </html>
