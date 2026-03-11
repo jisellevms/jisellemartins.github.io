@@ -145,6 +145,16 @@ transition:0.2s;
 .lang-switch button:hover{
 background:rgba(255,255,255,0.35);
 }
+         .skill-progress{
+height:8px;
+width:0;
+background:#ec4899;
+transition: width 1.5s ease;
+}
+
+.skill-progress.visible{
+width:60%;
+}
       </style>
    </head>
    <body>
@@ -485,8 +495,8 @@ data-en="Intermediate (B1)">
 Intermediário (B1)
 </small>
 
-<div style="margin-top:8px; background:#e5e7eb; border-radius:8px; overflow:hidden">
-<div style="width:60%; height:8px; background:#ec4899"></div>
+<div class="skill-bar">
+  <div class="skill-progress"></div>
 </div>
 
 </div>
@@ -561,6 +571,17 @@ document.querySelectorAll("[data-pt]").forEach(el => {
 
 document.documentElement.lang = lang === "pt" ? "pt-BR" : "en"
 
+}
+         document.querySelectorAll('.skill-progress').forEach(bar => {
+  observer.observe(bar)
+})
+
+observerCallback = entries => {
+ entries.forEach(entry => {
+   if(entry.isIntersecting){
+     entry.target.classList.add("visible")
+   }
+ })
 }
       </script>
    </body>
