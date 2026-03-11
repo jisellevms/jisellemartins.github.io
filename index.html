@@ -122,18 +122,52 @@
          from { opacity: 0; }
          to { opacity: 1; }
          }
+         .lang-switch{
+position:absolute;
+top:20px;
+right:20px;
+z-index:10;
+}
+
+.lang-switch button{
+background:rgba(255,255,255,0.2);
+border:none;
+color:white;
+padding:6px 12px;
+margin-left:6px;
+border-radius:8px;
+cursor:pointer;
+font-weight:600;
+backdrop-filter: blur(6px);
+transition:0.2s;
+}
+
+.lang-switch button:hover{
+background:rgba(255,255,255,0.35);
+}
       </style>
    </head>
    <body>
       <header>
          <div>
             <h1>Jiselle Martins</h1>
-            <h2>Engenheira de Software</h2>
-            <p>
-               Profissional com mais de 6 anos de experiência em consultorias e multinacionais,
-               com forte atuação em desenvolvimento mobile e soluções financeiras escaláveis.
-            </p>
+            <h2 
+data-pt="Engenheira de Software"
+data-en="Software Engineer">
+Engenheira de Software
+</h2>
+<p
+data-pt="Profissional com mais de 6 anos de experiência em consultorias e multinacionais, com forte atuação em desenvolvimento mobile e soluções financeiras escaláveis."
+data-en="Software engineer with more than 6 years of experience in consulting firms and multinational companies, specializing in mobile development and scalable financial solutions.">
+Profissional com mais de 6 anos de experiência em consultorias e multinacionais,
+com forte atuação em desenvolvimento mobile e soluções financeiras escaláveis.
+</p>
          </div>
+
+         <div class="lang-switch">
+   <button onclick="setLanguage('pt')">PT</button>
+   <button onclick="setLanguage('en')">EN</button>
+</div>
       </header>
       <section>
          <h3>Experiência Profissional</h3>
@@ -277,6 +311,15 @@
          }, { threshold: 0.15 });
          
          sections.forEach(section => observer.observe(section));
+         function setLanguage(lang){
+
+document.querySelectorAll("[data-pt]").forEach(el => {
+   el.textContent = el.dataset[lang]
+})
+
+document.documentElement.lang = lang === "pt" ? "pt-BR" : "en"
+
+}
       </script>
    </body>
 </html>
